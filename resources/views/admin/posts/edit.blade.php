@@ -30,7 +30,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <form action="admin/posts/{{$post->id}}" method="POST" role="form">
+        <form action="{{ route('admin.posts.update', $post->id) }}" method="POST" role="form">
             {{ csrf_field() }}
             {{ method_field('PATCH') }}
 

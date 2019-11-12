@@ -30,7 +30,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <form action="post" method="POST" role="form">
+        <form action="{{ route('admin.posts.store') }}" method="POST" role="form">
             {{ csrf_field() }}
             <div class="form-group">
                 <label>標題：</label>
